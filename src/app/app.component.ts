@@ -98,6 +98,7 @@ logioff()
 {
    localStorage.removeItem(Constant.LOCAL_KEY)
    this.loggedUserData=new Customer();
+   window.location.reload();
 }
 
 

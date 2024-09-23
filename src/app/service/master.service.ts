@@ -72,4 +72,11 @@ export class MasterService {
     return  this.http.post<APIResponseModel>(url,obj);
    
 }
+
+///my-order
+getAllSalesByCustomerId(customerId: number):Observable<APIResponseModel>{
+  const url=`${this.apiUrl}GetAllSaleByCustomerId?id=${customerId}`;
+  return this.http.get<APIResponseModel>(url);
+
+}
 }
